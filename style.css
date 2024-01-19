@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    position: relative;
+    margin:2rem auto 1rem;
+    width: 500px;
+    background: rgb(234,244,227);
+    background: linear-gradient(0deg, rgba(234,244,227,1) 13%, rgba(43,238,25,1) 100%);
+    text-align: center;
+    padding: 1rem 2rem ;
+    border: none;
+    border-radius: .5rem;
+    perspective: 500px;
+}
+.box .quote{
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.container .box{
+    background: rgb(145,227,138);
+    background: linear-gradient(0deg, rgba(145,227,138,1) 0%, rgba(234,244,227,1) 69%);
+    border-radius: .1rem;
+    border: none;
+    box-shadow: -20px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    transform: rotate(8deg);
+}
+.container .box::before{
+    content: '';
+    background-image: url(./icons/R.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top:-15px;
+    left:45%;
+}
+.quote::before,.quote::after {
+    content:' " ';
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1rem 1rem;
+
+}
+.box .author{
+    text-align: right;
+    font-size: 1em;
+    margin-right: 1rem;
+}
+.container .generateBtn{
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    background: rgb(145,227,138);
+    cursor: pointer;
+}

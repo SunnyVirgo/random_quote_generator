@@ -24,9 +24,17 @@ body{
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-.box .quote.show{
+.box .author{
+    text-align: right;
+    font-size: 1em;
+    margin-right: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.box .quote.show, .box .author.show{
     opacity: 1;
 }
+
 .container .box{
     background: rgb(145,227,138);
     background: linear-gradient(0deg, rgba(145,227,138,1) 0%, rgba(234,244,227,1) 69%);
@@ -34,7 +42,7 @@ body{
     border: none;
     box-shadow: -20px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
-    transform: rotate(8deg);
+    transform: rotate(5deg);
 }
 .container .box::before{
     content: '';
@@ -54,11 +62,7 @@ body{
     padding: 1rem 1rem;
 
 }
-.box .author{
-    text-align: right;
-    font-size: 1em;
-    margin-right: 1rem;
-}
+
 .container .generateBtn{
     margin-top: 2rem;
     padding: .5rem 1.5rem;

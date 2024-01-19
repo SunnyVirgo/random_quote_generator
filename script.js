@@ -6,6 +6,7 @@ const url = "https://api.quotable.io/quotes/random"
     function viewText() {
         setTimeout(() => {
            quoteText.classList.add('show')
+           author.classList.add('show')
         }, 1000)
     }
 

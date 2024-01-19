@@ -13,6 +13,11 @@ const url = "https://api.quotable.io/quotes/random"
         try {
             const response = await fetch(url)
             const data = await response.json()
+
+            quoteText.innerHTML = data[0].content
+            author.innerHTML = `-${data[0].author}`
+
+            viewText()
         } catch (error) {
             alert(error)
         }

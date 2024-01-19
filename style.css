@@ -24,6 +24,9 @@ body{
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+.box .quote.show{
+    opacity: 1;
+}
 .container .box{
     background: rgb(145,227,138);
     background: linear-gradient(0deg, rgba(145,227,138,1) 0%, rgba(234,244,227,1) 69%);

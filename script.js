@@ -13,25 +13,10 @@ const url = "https://api.quotable.io/quotes/random"
         try {
             const response = await fetch(url)
             const data = await response.json()
-
-            quoteText.innerHTML = data[0].content
-            viewText()
-
-
-            console.log(data);
         } catch (error) {
-            console.log(error);
+            alert(error)
         }
     }
-  
-    
-
-    btn.addEventListener("click",()=>{
-        quoteText.classList.remove('show')
-        setTimeout(() => {
-            fetchData()
-        }, 500);
-    })
 
     fetchData()
 

@@ -24,5 +24,14 @@ const url = "https://api.quotable.io/quotes/random"
         }
     }
 
+    btn.addEventListener("click",()=>{
+        quoteText.classList.remove('show')
+        author.classList.remove('show')
+        setTimeout(() => {
+            fetchData()
+        }, 500);
+       
+    })
+
     fetchData()
 
